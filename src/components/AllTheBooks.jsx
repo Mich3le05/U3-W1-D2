@@ -1,5 +1,5 @@
-import { Card, Col, Row } from 'react-bootstrap'
-import books from '../data/books.json'
+import { Card } from 'react-bootstrap'
+import books from '../data/fantasy.json'
 
 const AllTheBooks = () => {
   return (
