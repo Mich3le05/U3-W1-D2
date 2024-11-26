@@ -1,4 +1,4 @@
-import { Card } from 'react-bootstrap'
+import { Card, Button } from 'react-bootstrap'
 import books from '../data/fantasy.json'
 
 const AllTheBooks = () => {
@@ -10,6 +10,7 @@ const AllTheBooks = () => {
           <Card.Body>
             <Card.Title>{book.title}</Card.Title>
             <Card.Text>${book.price}</Card.Text>
+            <Button variant="primary">Read</Button>
           </Card.Body>
         </Card>
       ))}
