@@ -1,9 +1,10 @@
 import 'bootstrap/dist/css/bootstrap.min.css'
-import { Container, Row, Col } from 'react-bootstrap'
+import { Container, Row } from 'react-bootstrap'
 import CustomNavbar from './components/CustomNavbar'
 import MyFooter from './components/MyFooter'
 import Welcome from './components/Welcome'
-import AllTheBooks from './components/AllTheBooks'
+import SingleBook from './components/SingleBook'
+// import AllTheBooks from './components/AllTheBooks'
 
 function EpiBook() {
   return (
@@ -16,11 +17,9 @@ function EpiBook() {
         <Container>
           {/* <div class="row"> */}
           <Row className=" mt-3 g-3">
-            {/* <div class="col"> */}
-            <Col xs={12} md={8} lg={6}>
-              <Welcome />
-              <AllTheBooks />
-            </Col>
+            <Welcome />
+            {/* <AllTheBooks /> */}
+            <SingleBook />
           </Row>
         </Container>
       </main>
